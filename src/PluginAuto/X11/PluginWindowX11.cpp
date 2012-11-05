@@ -288,8 +288,6 @@ GdkNativeWindow PluginWindowX11::getWindow()
 
 void PluginWindowX11::InvalidateWindow() const
 {
-    gdk_threads_enter();
-    gtk_widget_queue_draw(m_canvas);
-    gdk_threads_leave();
+    // Doesn't exist yet
 }
 
